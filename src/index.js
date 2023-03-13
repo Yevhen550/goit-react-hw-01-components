@@ -1,18 +1,36 @@
 // import React from 'react';
 // import ReactDOM from 'react-dom/client';
+// import data from './data.json';
+
 // import './index.css';
 
-// const parahraph = React.createElement('p', {
-//   id: 'test-ID',
-//   children: ['I am Lion'],
-// });
+// !!!==================================================================
 
-// const p = <p id="test- id">I am LION</p>;
+// const Head = () => {
+//   return <p>I am HEAD</p>;
+// };
 
-// const div = (
-//   <div name="main" id="test-div-id" className="test-class">
-//     {p}
-//   </div>
-// );
+// const Card = () => {
+//   return data.map(photo => {
+//     return (
+//       <div
+//         key={photo.id}
+//         className="card mx-auto my-2"
+//         style={{ width: '18rem' }}
+//       >
+//         <img src={photo.url} className="card-img-top" alt={photo.title} />
+//         <div className="card-body">
+//           <h5 className="card-title">Card title: {photo.title} </h5>
+//           <Head />
+//           <a href="http" className="btn btn-primary">
+//             Go somewhere
+//           </a>
+//         </div>
+//       </div>
+//     );
+//   });
+// };
 
-// ReactDOM.createRoot(document.getElementById('root')).render(div);
+// ReactDOM.createRoot(document.getElementById('root')).render(<Card />);
+
+// console.log('КАРТОЧКА =>>', card);

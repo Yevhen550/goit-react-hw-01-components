@@ -1,0 +1,5 @@
+<span class="icon icon-size-small icon-state-default">
+    <span class="icon-markup">
+        <svg class="icon-color" role="img"><use xlink:href="dist/sprites/avatar.svg#avatar-default" /></svg>
+    </span>
+</span>

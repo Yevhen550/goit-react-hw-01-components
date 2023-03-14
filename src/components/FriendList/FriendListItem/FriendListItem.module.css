@@ -1,0 +1,62 @@
+.item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 210px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: var(--card-shadow);
+}
+
+.status {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.online {
+    /* composes: status; */
+    background-color: var(--online-status-color);
+}
+
+.offline {
+    /* composes: status; */
+    background-color: var(--offline-status-color);
+}
+
+.online::before,
+.offline::before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--text-color);
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-24px);
+    transition: transform var(--animation), opacity var(--animation);
+}
+
+.online::before {
+    content: 'Online';
+}
+
+.offline::before {
+    content: 'Offline';
+}
+
+.item:hover .online::before,
+.item:hover .offline::before {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.avatar {
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 24px;
+}
